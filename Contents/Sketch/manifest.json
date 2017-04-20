@@ -1,0 +1,31 @@
+{
+    "name" : "Copy Color",
+    "identifier" : "com.sketchapp.examples.copy-color",
+    "version" : "2.0",
+    "description" : "provides shortcuts to copy a layer's fill or border color as well as text color hex value.",
+    "authorEmail" : "poyi.design@gmail.com",
+    "author" : "Poyi Chen",
+    "commands" : [
+    {
+      "script" : "copy-color.js",
+      "handler" : "copyFillColor",
+      "shortcut" : "shift cmd f",
+      "name" : "Copy Fill Color",
+      "identifier" : "copy-fill"
+    },
+    {
+      "script" : "copy-color.js",
+      "handler" : "copyTextColor",
+      "shortcut" : "shift cmd x",
+      "name" : "Copy Text Color",
+      "identifier" : "copy-text"
+    },
+    {
+      "script" : "copy-color.js",
+      "handler" : "copyBorderColor",
+      "shortcut" : "shift cmd b",
+      "name" : "Copy Border Color",
+      "identifier" : "copy-border"
+    },
+  ]
+}

@@ -22,3 +22,5 @@ Note that the Shift + Command + f overwrites the Sketch default enter full scree
 <b>Copy Text Color</b>
 
 Select a text object and press <b>Shift + Command + x</b>. Paste away!
+
+[![Install PLUGIN NAME with Sketchpacks](http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png "Install PLUGIN NAME with Sketchpacks")](https://sketchpacks.com/YOUR_NAME/PLUGIN_NAME/install)

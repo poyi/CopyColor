@@ -2,7 +2,7 @@ function copyFillColor(context) {
   var doc = context.document;
   var selected = context.selection;
   if (selected.count() > 0) {
-    var layerFill = selected[0].style().fill().color().immutableModelObject().hexValue().toString();
+    var layerFill = selected.firstObject().style().fills().firstObject().color().immutableModelObject().hexValue().toString();
     var pasteBoard = NSPasteboard.generalPasteboard();
     pasteBoard.clearContents()
     pasteBoard.writeObjects([layerFill]);
@@ -16,7 +16,7 @@ function copyTextColor(context) {
   var doc = context.document;
   var selected = context.selection;
   if (selected.count() > 0) {
-    var textFill = selected[0].textColor().immutableModelObject().hexValue().toString();
+    var textFill = selected.firstObject().textColor().immutableModelObject().hexValue().toString();
     var pasteBoard = NSPasteboard.generalPasteboard();
     pasteBoard.clearContents()
     pasteBoard.writeObjects([textFill]);
@@ -30,7 +30,7 @@ function copyBorderColor(context) {
   var doc = context.document;
   var selected = context.selection;
   if (selected.count() > 0) {
-    var borderColor = selected[0].style().borders().firstObject().color().immutableModelObject().hexValue().toString();
+    var borderColor = selected.firstObject().style().borders().firstObject().color().immutableModelObject().hexValue().toString();
     var pasteBoard = NSPasteboard.generalPasteboard();
     pasteBoard.clearContents()
     pasteBoard.writeObjects([borderColor]);

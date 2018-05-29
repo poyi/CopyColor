@@ -26,6 +26,6 @@
       "shortcut" : "shift cmd b",
       "name" : "Copy Border Color",
       "identifier" : "copy-border"
-    },
+    }
   ]
 }
